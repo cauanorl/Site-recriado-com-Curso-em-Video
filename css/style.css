@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital@1&display=swap');
+
+:root {
+  --p: rgb(112, 112, 112);
+}
+
+@media (max-width: 350px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 950px) {
+  main {
+    max-width: 950px;
+  }
+
+  .video {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 650px) {
+  .video {
+    min-height: 450px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .video {
+    min-height: 650px;
+  }
+}
+
+@font-face {
+  font-family: android;
+  src: url(/fontes/idroid.otf);
+}
+
+body {
+  background-color: rgb(226, 226, 199);
+}
+
+.android {
+  font-family: android, sans-serif;
+  color: rgb(0, 92, 0);
+  font-weight: normal;
+}
+
+.destaque {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+
+.destaque a {
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.anexo a {
+  color: darkgreen;
+  font-weight: bold;
+  background-color: rgb(116, 200, 115);
+  padding: 0.15em 0.2em;
+  text-decoration: none;
+}
+
+/**************
+* HEADER
+***************/
+
+@keyframes transitionMenu {
+  0% {
+    color: lightgray;
+    background-color: transparent;
+  }
+
+  10% {
+    background-color: rgb(64, 105, 64);
+    color: rgb(0, 133, 0);
+  }
+
+  50% {
+    background-color: rgb(102, 168, 102);
+    color: darkgreen;
+  }
+
+  100% {
+    background-color: rgb(102, 168, 102);
+    color: darkgreen;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+  background: linear-gradient(0deg, rgba(33,51,30,1) 0%, rgba(47,75,46,1) 17%, rgba(52,89,52,1) 38%, rgba(65,116,66,1) 59%, rgba(88,154,87,1) 100%);
+  font-weight: normal;
+  padding: 1.8em 0.3em 0.5em;
+  box-shadow: 0 1px 4px black;
+  position: relative
+}
+
+header h1, header p {
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Mohave', sans-serif;
+  margin-bottom: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: rgb(243, 243, 243);
+  font-size: 2em;
+}
+
+header p {
+  width: 60%;
+  margin: 0 auto 1.3em;
+  color: rgb(228, 228, 228);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 2px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 0.8em;
+  padding: 0.6em;
+  border-radius: 3px;
+}
+
+header nav ul li a:hover {
+  animation-name: transitionMenu;
+  animation-fill-mode: forwards;
+  animation-duration: 1000ms;
+}
+
+/***************
+*   MAIN
+****************/
+
+main {
+  width: 100%;
+  margin: 0 auto 2em;
+  background-color: white;
+  box-shadow: 0 0 3px black;
+  border-radius: 3px;
+  padding: 1em;
+}
+
+main section h1 {
+  font-size: 1.3em;
+  margin-bottom: 0.9em;
+}
+
+main section p {
+  text-indent: 1.5em;
+  font-size: 0.8em;
+  line-height: 1.7em; 
+  color: var(--p);
+  text-align: justify;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+main section h2 {
+  font-size: 1.1em;
+  background: linear-gradient(90deg, rgb(122, 212, 121) 0%, rgba(123, 212, 121, 0.849) 19%, rgba(110, 191, 109, 0.74) 37%, rgba(110, 191, 109, 0.582) 48%, rgba(110, 191, 109, 0.404) 60%, rgba(110, 191, 109, 0.233) 80%, rgba(110, 191, 109, 0) 100%);
+  text-indent: 0.5em;
+  margin: 0.9em 0;
+}
+
+main section .droid img {
+  width: 100%;
+}
+
+main section .irina img {
+  width: 100%;
+}
+
+main section .imgAndroid {
+  display: block;
+  margin: 1em auto;
+  height: 11em
+}
+
+main section .video {
+  width: 100%;
+  height: 315px;
+  border: 0.5px solid rgba(0, 0, 0, 0.171);
+}
+
+/*****************
+*     LearnMore
+*****************/
+
+main section .learnMore {
+  margin: 1em 0;
+  background-color: rgb(132, 204, 131);
+  border-radius: 10px;
+}
+
+main section .learnMore p {
+  color: rgb(59, 59, 59);
+  line-height: 2em;
+}
+
+main section .learnMore h3 {
+  padding: 0.6em;
+  background-color: rgb(54, 82, 50);
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-weight: normal;
+}
+
+main section .learnMore div {
+  padding: 0.8em 0.5em;
+}
+
+main section .learnMore .listAndroid {
+  margin-left: 1em;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main section .learnMore .listAndroid .lista {
+  list-style: circle;
+}
+
+main section .learnMore .listAndroid .lista li {
+  font-size: 0.8em;
+  color: rgb(59, 59, 59);
+}
+
+
+/*****************
+*   FOOTER
+******************/
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0.9em
+}
